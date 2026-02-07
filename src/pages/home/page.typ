@@ -1,12 +1,13 @@
 #import "../../_global/layout.typ": layout
 #import "../../components/nav/elem.typ": navbar
-#import "../../_utils/html_helpers.typ": *
+#import "../../components/button/elem.typ": counter_button
 
-#show: layout.with(title: "Home")
+// This passes title and js_file to the layout function defined above
+#show: layout.with(
+  title: "WASM Counter",
+  js_file: "index.js" 
+)
 
 #navbar()
 
-#main()[
-  #header()[= Welcome Home]
-  #div()[This is my custom SSG built with Typst.]
-]
+#counter_button(label: "Increment C Counter")

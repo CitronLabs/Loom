@@ -1,0 +1,5 @@
+{
+  "compiler": "emcc",
+  "flags": "-s MODULARIZE=1 -s EXPORT_ES6=1 -s EXPORTED_RUNTIME_METHODS=['ccall','cwrap']",
+  "output_flags": "-o"
+}
