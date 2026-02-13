@@ -1,0 +1,52 @@
+/* src/components/loom/button/button.css */
+.loom-button {
+    appearance: none;
+    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    box-shadow: 0 4px 15px rgba(110, 69, 226, 0.3);
+    transition: 
+        transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+        filter 0.3s ease, 
+        box-shadow 0.5s ease;
+}
+
+.loom-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(110, 69, 226, 0.4);
+    filter: brightness(1.1);
+}
+
+.loom-button:active {
+    transform: translateY(0);
+    filter: brightness(0.9);
+}
+
+/* Add to src/components/loom/button/button.css */
+
+@keyframes loom-shake {
+  0% { transform: translate(1px, 1px) rotate(0deg) scale(1.2); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg) scale(1.2); }
+  20% { transform: translate(-3px, 0px) rotate(1deg) scale(1.2); }
+  30% { transform: translate(3px, 2px) rotate(0deg) scale(1.2); }
+  40% { transform: translate(1px, -1px) rotate(1deg) scale(1.2); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg) scale(1.2); }
+  60% { transform: translate(-3px, 1px) rotate(0deg) scale(1.2); }
+  70% { transform: translate(3px, 1px) rotate(-1deg) scale(1.2); }
+  80% { transform: translate(-1px, -1px) rotate(1deg) scale(1.2); }
+  90% { transform: translate(1px, 2px) rotate(0deg) scale(1.2); }
+  100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.2); }
+}
+
+.shake-active {
+  animation: loom-shake 0.5s;
+  animation-iteration-count: infinite;
+  background: #ff4757 !important; /* Visual warning color */
+}

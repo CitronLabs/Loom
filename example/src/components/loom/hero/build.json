@@ -1,0 +1,11 @@
+{
+  "controllers": [
+    {
+      "class": "HeroController",
+      "selector": ".hero-container",
+      "events": {
+	"mousemove": "onMouseMove"
+      }
+    }
+  ]
+}

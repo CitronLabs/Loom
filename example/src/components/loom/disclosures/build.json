@@ -1,0 +1,9 @@
+{
+  "controllers": [
+    {
+      "class": "DisclosureController",
+      "selector": ".disclosure-group",
+      "events": {}
+    }
+  ]
+}

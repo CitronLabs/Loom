@@ -1,4 +1,0 @@
-{
-  "dependencies": [],
-  "wasm_sources": ["counter.c"]
-}

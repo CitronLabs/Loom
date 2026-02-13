@@ -1,0 +1,38 @@
+body { 
+	margin: 0; 
+	background: #0a0a0a; 
+	color: #eee; 
+	font-family: system-ui; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #333;
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    width: 80%; /* Match padding */
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #6e45e2;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}

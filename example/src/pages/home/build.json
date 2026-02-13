@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "loom/hero",
+    "loom/button",
+    "loom/disclosures"
+  ]
+}

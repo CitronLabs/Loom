@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LOOM Framework</title>
+    <script src="index_bootstrap.js" type="module"></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="loom_hero.css">
+    <link rel="stylesheet" href="loom_button.css">
+    <link rel="stylesheet" href="loom_disclosures.css">
+  </head>
+  <body>
+    <div class="hero-container">
+      <canvas id="hero-gpu-canvas" width="1920" height="1080"></canvas>
+      <div class="hero-content">
+        <h1 class="glitch-text">LOOM</h1>
+      </div>
+    </div>
+    <section class="explanation">
+      <div class="container">
+        <h2>“Bare-Metal Web Development”</h2>
+        <p>Loom orchestrates WebGPU compute, WASM logic, and Typst design. Click the button below to trigger a C-compiled calculation.</p>
+        <button class="loom-button">Execute WASM</button>
+        <h2>“Framework FAQ”</h2>
+        <div data-accordion="true" class="disclosure-group">
+          <div class="accordion-item">
+            <button data-toggle="q1" aria-expanded="false" class="accordion-header">What is the core tech?</button>
+            <div id="q1" class="accordion-content" hidden="true">Emscripten for C/C++, Typst for HTML, and native Web APIs.</div>
+          </div>
+          <div class="accordion-item">
+            <button data-toggle="q2" aria-expanded="false" class="accordion-header">Is it production ready?</button>
+            <div id="q2" class="accordion-content" hidden="true">It's built for high-performance niche applications.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

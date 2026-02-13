@@ -1,0 +1,11 @@
+{
+  "controllers": [
+    {
+      "class": "GraphicsController",
+      "selector": ".graphics-container",
+      "events": {
+        "click": "toggleCompute"
+      }
+    }
+  ]
+}

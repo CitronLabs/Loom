@@ -1,0 +1,23 @@
+.graphics-container {
+    padding: 20px;
+    border: 2px solid #6e45e2;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.canvas-pair {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.label {
+    margin-top: 10px;
+    color: #88d3ce;
+    font-family: monospace;
+}

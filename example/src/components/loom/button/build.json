@@ -1,0 +1,12 @@
+{
+  "wasm_sources": ["counter.c"],
+  "controllers": [
+    {
+      "class": "ButtonController",
+      "selector": ".loom-button",
+      "events": {
+        "click": "onClick"
+      }
+    }
+  ]
+}
